@@ -9,6 +9,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.stereotype.Service;
+import org.springframework.web.client.HttpClientErrorException;
 
 import java.util.List;
 import java.util.Optional;
@@ -47,21 +48,29 @@ public class ParkingSpotService implements ParkingSpotInterface {
     }
 
     @Override
-    public ResponseEntity<ParkingSpotModel> deleteParkingSpotModel(String responsibleName){
+    public ResponseEntity<ParkingSpotModel> deleteParkingSpotModel(String responsibleName) {
         Optional<ParkingSpotModel> parkingSpotModel = parkingSpotRepository.findByResponsibleName(responsibleName);
-        if(parkingSpotModel.isPresent()){
+        if (parkingSpotModel.isPresent()) {
             parkingSpotRepository.delete(parkingSpotModel.get());
             return ResponseEntity.status(HttpStatus.OK).build();
+        } else {
+            return ResponseEntity.status(HttpStatus.NOT_FOUND).build();
+        }
+    }
+
+    @Override
+    public ResponseEntity<ParkingSpotModel> editCar(String responsibleName, String licensePlateCar, String brandCar, String modelCar, String colorCar){
+        Optional<ParkingSpotModel> parkingSpotModel = parkingSpotRepository.findByResponsibleName(responsibleName);
+        if (parkingSpotModel.isPresent()){
+            parkingSpotModel.get().setLicensePlateCar(licensePlateCar);
+            parkingSpotModel.get().setBrandCar(brandCar);
+            parkingSpotModel.get().setModelCar(modelCar);
+            parkingSpotModel.get().setColorCar(colorCar);
+            ParkingSpotModel parkingSpot = parkingSpotRepository.save(parkingSpotModel.get());
+            return ResponseEntity.status(HttpStatus.OK).body(parkingSpot);
         }else{
             return ResponseEntity.status(HttpStatus.NOT_FOUND).build();
         }
 
-        @Override
-        public ResponseEntity<ParkingSpotModel> editCar(String licensePlate,String brandCar,String modelCar,String colorCar){
-            Optional<ParkingSpotModel> parkingSpotModel = parkingSpotRepository.findByResponsibleName(responsibleName);
-            parkingSpotModel.get().setCar(modelCar);
-            ParkingSpotModel user1 = parkingSpotRepository.save(parkingSpotModel.get());
-            return ResponseEntity.status(HttpStatus.OK).body(user1);
-        }
     }
 }

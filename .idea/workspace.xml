@@ -4,38 +4,23 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="f32f6e24-737a-40c4-b8b0-08c586ec3061" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.gitignore" afterDir="false" />
+    <list default="true" id="15ba1441-b3df-48d6-b586-c8f84854edfc" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/parking-control.iml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/parking-control/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/parking-control/.mvn/wrapper/maven-wrapper.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/parking-control/.mvn/wrapper/maven-wrapper.properties" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/parking-control/mvnw" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/parking-control/mvnw.cmd" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/parking-control/pom.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/parking-control/src/main/java/com/api/parkingcontrol/ParkingControlApplication.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/parking-control/src/main/java/com/api/parkingcontrol/domain/ParkingSpotModel.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/parking-control/src/main/java/com/api/parkingcontrol/protocols/ParkingSpotInterface.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/parking-control/src/main/java/com/api/parkingcontrol/repository/ParkingSpotRepository.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/parking-control/src/main/java/com/api/parkingcontrol/request/ParkingSpotDto.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/parking-control/src/main/java/com/api/parkingcontrol/resource/controllers/ParkingSpotController.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/parking-control/src/main/java/com/api/parkingcontrol/service/ParkingSpotService.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/parking-control/src/main/resources/application.properties" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/parking-control/src/test/java/com/api/parkingcontrol/ParkingControlApplicationTests.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.mvn/wrapper/maven-wrapper.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.mvn/wrapper/maven-wrapper.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/api/parkingcontrol/ParkingControlApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/api/parkingcontrol/ParkingControlApplication.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/api/parkingcontrol/domain/ParkingSpotModel.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/api/parkingcontrol/domain/ParkingSpotModel.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/api/parkingcontrol/protocols/ParkingSpotInterface.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/api/parkingcontrol/protocols/ParkingSpotInterface.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/api/parkingcontrol/resource/controllers/ParkingSpotController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/api/parkingcontrol/resource/controllers/ParkingSpotController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/api/parkingcontrol/service/ParkingSpotService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/api/parkingcontrol/service/ParkingSpotService.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
-  </component>
-  <component name="FileTemplateManagerImpl">
-    <option name="RECENT_TEMPLATES">
-      <list>
-        <option value="AnnotationType" />
-        <option value="Class" />
-        <option value="Interface" />
-      </list>
-    </option>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -46,12 +31,11 @@
   <component name="MavenImportPreferences">
     <option name="generalSettings">
       <MavenGeneralSettings>
-        <option name="mavenHome" value="Use Maven wrapper" />
         <option name="useMavenConfig" value="true" />
       </MavenGeneralSettings>
     </option>
   </component>
-  <component name="ProjectId" id="29ZNMQh47SQ9nQYl9GTbO5KYDnk" />
+  <component name="ProjectId" id="29fN0ZxhheSiUCInQPR3cplvutX" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
@@ -63,16 +47,10 @@
     "last_opened_file_path": "C:/Users/gusta/Desktop/Conhecimento/Java/parking-control"
   }
 }]]></component>
-  <component name="RecentsManager">
-    <key name="CreateClassDialog.RecentsKey">
-      <recent name="com.api.parkingcontrol.resource.controllers.dtos" />
-      <recent name="com.api.parkingcontrol.domain" />
-    </key>
-  </component>
   <component name="RunManager">
     <configuration name="ParkingControlApplication" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.api.parkingcontrol.ParkingControlApplication" />
-      <module name="parking-control" />
+      <module name="parkingcontrol" />
       <extension name="coverage">
         <pattern>
           <option name="PATTERN" value="com.api.parkingcontrol.*" />
@@ -92,22 +70,12 @@
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="f32f6e24-737a-40c4-b8b0-08c586ec3061" name="Changes" comment="" />
-      <created>1653316611575</created>
+      <changelist id="15ba1441-b3df-48d6-b586-c8f84854edfc" name="Changes" comment="" />
+      <created>1653499960753</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
-      <updated>1653316611575</updated>
+      <updated>1653499960753</updated>
     </task>
     <servers />
-  </component>
-  <component name="XDebuggerManager">
-    <breakpoint-manager>
-      <breakpoints>
-        <breakpoint enabled="true" type="java-exception">
-          <properties class="java.sql.SQLException" package="java.sql" />
-          <option name="timeStamp" value="1" />
-        </breakpoint>
-      </breakpoints>
-    </breakpoint-manager>
   </component>
 </project>

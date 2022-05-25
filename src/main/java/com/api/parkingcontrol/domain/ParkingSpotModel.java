@@ -58,5 +58,4 @@ public class ParkingSpotModel implements Serializable {
                 .block(parkingSpotModel.getBlock())
                 .responsibleName(parkingSpotModel.getResponsibleName()).build();
     }
-
 }

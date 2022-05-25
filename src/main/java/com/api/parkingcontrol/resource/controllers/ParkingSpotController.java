@@ -58,11 +58,11 @@ public class ParkingSpotController {
     @CrossOrigin
     @PatchMapping
     @RequestMapping("/car")
-    public ResponseEntity<ParkingSpotModel> edit(@RequestParam(name = "licensePlate") String licensePlate,
-                                     @RequestParam(name = "brandCar") String brandCar,
-                                     @RequestParam(name = "modelCar") String modelCar,
-                                     @RequestParam(name = "colorCar") String colorCar,
-                                                 @RequestParam(name= "responsibelName")String responsibleName){
-        return parkingSpotInterface.editCar(licensePlate,brandCar,modelCar,colorCar, responsibleName);
+    public ResponseEntity<ParkingSpotModel> edit(@RequestParam(name= "responsibleName") String responsibleName,
+                                                 @RequestParam(name = "licensePlateCar") String licensePlateCar,
+                                                @RequestParam(name = "brandCar") String brandCar,
+                                                @RequestParam(name = "modelCar") String modelCar,
+                                                @RequestParam(name = "colorCar") String colorCar){
+        return parkingSpotInterface.editCar(responsibleName, licensePlateCar, brandCar, modelCar, colorCar);
     }
 }
