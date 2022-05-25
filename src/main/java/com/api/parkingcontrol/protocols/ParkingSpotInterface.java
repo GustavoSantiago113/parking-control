@@ -17,4 +17,6 @@ public interface ParkingSpotInterface {
     ResponseEntity<ParkingSpotModel> getParkingSpotModel(String responsibleName);
 
     ResponseEntity<ParkingSpotModel> deleteParkingSpotModel(String responsibleName);
+
+    ResponseEntity<ParkingSpotModel> editCar(String licensePlate,String brandCar,String modelCar,String colorCar, String responsibleName);
 }

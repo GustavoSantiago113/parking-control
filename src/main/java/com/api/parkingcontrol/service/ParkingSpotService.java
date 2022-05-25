@@ -56,5 +56,12 @@ public class ParkingSpotService implements ParkingSpotInterface {
             return ResponseEntity.status(HttpStatus.NOT_FOUND).build();
         }
 
+        @Override
+        public ResponseEntity<ParkingSpotModel> editCar(String licensePlate,String brandCar,String modelCar,String colorCar){
+            Optional<ParkingSpotModel> parkingSpotModel = parkingSpotRepository.findByResponsibleName(responsibleName);
+            parkingSpotModel.get().setCar(modelCar);
+            ParkingSpotModel user1 = parkingSpotRepository.save(parkingSpotModel.get());
+            return ResponseEntity.status(HttpStatus.OK).body(user1);
+        }
     }
 }
